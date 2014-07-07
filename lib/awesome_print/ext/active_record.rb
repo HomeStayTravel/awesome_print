@@ -44,7 +44,7 @@ module AwesomePrint
 
       data = object.class.column_names.inject(::ActiveSupport::OrderedHash.new) do |hash, name|
         if object.has_attribute?(name) || object.new_record?
-          value = object.respond_to?(name) ? object.send(name) : object.read_attribute(name)
+          value = object.respond_to?(name) ? object.public_send(name) : object.read_attribute(name)
           hash[name.to_sym] = value
         end
         hash
