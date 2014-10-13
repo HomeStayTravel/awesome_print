@@ -364,3 +364,8 @@ http://www.dvorkin.net
 %w(mike dvorkin.net) * "@" || "twitter.com/mid"
 
 Released under the MIT license. See LICENSE file for details.
+
+Other
+---
+
+This fork is in use at [Homestay.com](http://www.homestay.com).
